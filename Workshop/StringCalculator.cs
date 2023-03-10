@@ -5,7 +5,7 @@ namespace Workshop
     {
         public static int Calculate(string str)
         {
-            if (string.IsNullOrEmpty(str))
+            if (!string.IsNullOrEmpty(str))
                 return 0;
 
             if (int.TryParse(str, out int result))
