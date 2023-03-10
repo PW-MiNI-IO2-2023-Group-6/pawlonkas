@@ -17,6 +17,7 @@ namespace WorkshopTests
         [InlineData("0", 0)]
         [InlineData("121", 121)]
         [InlineData("42", 42)]
+        [InlineData("1000", 1000)]
         public void StringWithNumberReturnsItsValue(string str, int exptected)
         {
             int result = StringCalculator.Calculate(str);
